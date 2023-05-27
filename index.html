@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<title>BrookEdu Home</title>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0;}
+
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+</style>
+<body>
+
+<div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-home"></i></a> 
+  <a href="#"><i class="fa fa-search"></i></a> 
+  <a href="#"><i class="fa fa-pencil"></i></a> 
+  <a href="#"><i class="fa fa-globe"></i></a>
+  <a href="#"><i class="fa fa-book"></i></a> 
+</div>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+</style>
+</head>
+<body>
+
+<h2><b>Educational Resources</b></h2>
+<p>Learn about many things below</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Atoms</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Space</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Geometry</button>
+  <button class="tablinks" onclick="openCity(event, 'Poetry')">Poetry</button>
+  
+
+<div id="London" class="tabcontent">
+  <h3>Atoms</h3>
+  <p>An atom is a particle of matter that uniquely defines a chemical element. An atom consists of a central nucleus that is surrounded by one or more negatively charged electrons. The nucleus is positively charged and contains one or more relatively heavy particles known as protons and neutrons.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Space</h3>
+  <p>Is force applied in space?
+Yes, there is a gravitational force acting on everything—but there is also that air drag force that will make the spacecraft slow down as it moves down. If the human is going to stay inside the spacecraft, there must also be an extra force on that human (from the floor).</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Geometry</h3>
+  <p>In geometry, 3D shapes are solid shapes or figures that have three dimensions. Generally, length, width and height are the dimensions of 3D shapes (three-dimensional shapes). The common names of these shapes are cube, cuboid, cone, cylinder and sphere. 3D shapes are defined by their respective properties such as edges, faces, vertices, curved surfaces, lateral surfaces and volume.
+
+We come across a number of objects of different shapes and sizes in our day-to-day life. There are golf balls, doormats, ice-cream cones, coke cans, and so on. In this article, we will discuss the various 3D shapes, surface area and volumes, and the process of making 3D shapes using nets with the help of 2D Shapes.
+
+</p>
+</div>
+<div id="Poetry" class="tabcontent">
+  <h3>Poetry</h3>
+  <p>O Romeo, Romeo, wherefore art thou Romeo?
+Deny thy father and refuse thy name.
+Or if thou wilt not, be but sworn my love
+And I’ll no longer be a Capulet.
+‘Tis but thy name that is my enemy:
+Thou art thyself, though not a Montague.
+What’s Montague? It is nor hand nor foot
+Nor arm nor face nor any other part
+Belonging to a man. O be some other name.
+What’s in a name? That which we call a rose
+By any other name would smell as sweet;
+So Romeo would, were he not Romeo call’d,
+Retain that dear perfection which he owes
+Without that title. Romeo, doff thy name,
+And for that name, which is no part of thee,
+Take all myself.
+
+</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<h1>
+    <img src="https://raw.githubusercontent.com/BrooksoftAlpha/BrooksoftAlpha.github.io/main/brooksoft alpha.png" style="width:100%"></h1>
+   
+</body>
+</html> 
+
+
+</body>
+</html> 
 
